@@ -1,1 +1,1 @@
-https://www.crowdbotics.com/privacy-policy
+https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/27058/settings
