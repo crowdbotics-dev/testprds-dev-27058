@@ -10,3 +10,8 @@ class Tested(models.Model):
 class Test(models.Model):
     "Generated Model"
     new = models.BigIntegerField()
+
+
+class NewModel(models.Model):
+    "Generated Model"
+    cost = models.BigIntegerField()
