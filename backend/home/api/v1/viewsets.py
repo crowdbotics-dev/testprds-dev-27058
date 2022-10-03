@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from home.models import NewModel, Test, Tested
-from .serializers import NewModelSerializer, TestSerializer, TestedSerializer
+from home.models import NewModel, Tested
+from .serializers import NewModelSerializer, TestedSerializer
 from rest_framework import authentication
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.viewsets import ModelViewSet, ViewSet
@@ -41,15 +41,6 @@ class TestedViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = Tested.objects.all()
-
-
-class TestViewSet(viewsets.ModelViewSet):
-    serializer_class = TestSerializer
-    authentication_classes = (
-        authentication.SessionAuthentication,
-        authentication.TokenAuthentication,
-    )
-    queryset = Test.objects.all()
 
 
 class NewModelViewSet(viewsets.ModelViewSet):
