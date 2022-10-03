@@ -1,7 +1,6 @@
 from django.contrib import admin
-from .models import NewModel, Tested
+from .models import NewModel
 
-admin.site.register(Tested)
 admin.site.register(NewModel)
 
 # Register your models here.
